@@ -11,6 +11,11 @@ data = pd.read_csv('data_pivoted.csv')
 data=pd.DataFrame(columns = data.columns[1:])
 print(data)
 
+@app.route('/')
+def home():
+    <h1>Home Page</h1>
+
+
 @app.route('/predict',methods=['GET','POST'])
 def predict():
     if request.method == "GET":
