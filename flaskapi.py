@@ -13,7 +13,7 @@ print(data)
 
 @app.route('/')
 def home():
-    <h1>Home Page</h1>
+    return '<h1>Home Page</h1>'
 
 
 @app.route('/predict',methods=['GET','POST'])
